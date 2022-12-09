@@ -1,15 +1,15 @@
-import React from 'react';
-import Cart from '../Cart/Cart';
+import React from "react";
+import Cart from "../Cart/Cart";
 
-import './Header.scss';
+import "./Header.scss";
 
 const Header = () => {
   return (
     <header className="header__container">
       <div className="header__containerLeft">
-        <h1>Title</h1>
+        <h1 className="header__title">Products</h1>
         <div>
-          <ul>
+          <ul className="header__breadcrumb">
             <li>
               <a>Products</a>
             </li>
@@ -19,9 +19,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <Cart 
-        className="header__containerRight"
-      />
+      <Cart className="header__containerRight" />
     </header>
   );
 };

@@ -1,9 +1,48 @@
 @import '../../styles/mixins.scss';
+@import '../../styles/config.scss';
 
 .header__container {
   @include container;
   @include flex-layout-space-between;
+  margin-top: $padding-md;
+  border-bottom: 1px solid lighten($color-primary, 70%);
+
   .header__containerLeft {
     @include flex-layout-columns;
+
+    .header__title {
+      margin: 0;
+      align-self: start;
+    }
+  }
+  
+}
+
+.header__breadcrumb {
+  padding: $padding-md 0;
+  list-style: none;
+  margin: 0;
+
+  li {
+    display: inline;
+    font-size: $font-sm;
+    color: $color-primary;
+
+    a {
+      color: $color-secondary;
+      text-decoration: none;
+
+      &:hover {
+        color: darken($color-secondary, 10%);
+        ;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+
+  li+li::before {
+    content: "/\00a0";
+    padding: $padding-sm;
   }
 }

@@ -1,0 +1,9 @@
+@import '../../styles/mixins.scss';
+
+.header__container {
+  @include container;
+  @include flex-layout-space-between;
+  .header__containerLeft {
+    @include flex-layout-columns;
+  }
+}

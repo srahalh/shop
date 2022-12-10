@@ -4,10 +4,9 @@
 .ItemCard__container {
   @include flex-layout-columns;
   align-items: initial;
-  width: 18rem;
   height: 21rem;
   padding: $padding-md;
-  margin: $margin-md 0;
+  margin: $margin-sm $margin-sm;
   cursor: pointer;
   border: 1px solid lighten($color-primary, 70%);
   background-color: $color-background-2;
@@ -31,5 +30,13 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
+  }
+
+  @include desktop {
+    flex: 0 0 46.62%;
+  }
+
+  @include desktop-lg {
+    flex: 0 0 22.96%;
   }
 }

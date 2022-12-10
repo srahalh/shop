@@ -13,9 +13,9 @@ const ItemList = () => {
     useSearch(products);
 
   return (
-    <>
+    <div className="ItemList__container">
       <Search setSearchValue={setSearchValue} />
-      <div className="ItemList__continer">
+      <div className="ItemList__List">
         {isLoading ? (
           <Spinner />
         ) : productSearched.length === 0 || isError ? (
@@ -37,7 +37,7 @@ const ItemList = () => {
           })
         )}
       </div>
-    </>
+    </div>
   );
 };
 

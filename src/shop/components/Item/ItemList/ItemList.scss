@@ -1,28 +1,38 @@
 @import '../../../styles/mixins.scss';
 @import '../../../styles/config.scss';
 
-.ItemList__continer {
+.ItemList__container {
   @include container-tablet;
-  @include flex-layout-columns;
-  margin-top: $margin-md;
-
-  @include desktop {
-    @include container-desktop;
-    @include flex-layout-space-between;
+  
+    @include desktop {
+      @include container-desktop;
+    }
+  
+    @include desktop-lg {
+      @include container-desktop-lg;
+    }
+    
+  .ItemList__List {
+    @include flex-layout-columns;
     margin-top: $margin-md;
+  
+    @include desktop {
+      @include flex-layout-space-start;
+      margin-top: $margin-md;
+    }
+  
+    @include desktop-lg {
+      @include flex-layout-space-start;
+      margin-top: $margin-md;
+    }
+    flex-wrap: wrap;
+  
+    .ItemList__search{
+      flex: 1;
+    }
+    .ItemList__emptyList {
+      color: $color-error;
+    }
   }
-
-  @include desktop-lg {
-    @include container-desktop-lg;
-    @include flex-layout-space-between;
-    margin-top: $margin-md;
-  }
-  flex-wrap: wrap;
-
-  .ItemList__search{
-    flex: 1;
-  }
-  .ItemList__emptyList {
-    color: $color-error;
-  }
+  
 }

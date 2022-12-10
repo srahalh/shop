@@ -1,0 +1,9 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/config.scss';
+
+.ItemList__continer {
+  @include container;
+  @include flex-layout-space-between;
+  flex-wrap: wrap;
+  margin-top: $margin-md;
+}

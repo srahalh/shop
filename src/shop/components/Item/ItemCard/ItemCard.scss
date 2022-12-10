@@ -1,0 +1,13 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/config.scss';
+
+.ItemCard__container {
+  @include flex-layout-columns;
+  width: 18rem;
+  height: 25rem;
+  padding: $padding-md;
+  margin: $margin-md 0;
+  cursor: pointer;
+  border: 1px solid lighten($color-primary, 70%);
+  background-color: $color-background-2;
+}

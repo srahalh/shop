@@ -1,7 +1,7 @@
-import React from "react";
-import Cart from "../Cart/Cart";
+import React from 'react';
+import Cart from '../Cart/Cart';
 
-import "./Header.scss";
+import './Header.scss';
 
 const Header = () => {
   return (

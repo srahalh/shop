@@ -1,0 +1,30 @@
+@import '../../styles/config.scss';
+
+.breadcrumb__list {
+  padding: $padding-md 0;
+  list-style: none;
+  align-self: flex-start;
+  margin: 0;
+
+  li {
+    display: inline;
+    font-size: $font-sm;
+    color: $color-primary;
+
+    a {
+      color: $color-secondary;
+      text-decoration: none;
+
+      &:hover {
+        color: darken($color-secondary, 10%);
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+
+  li+li::before {
+    content: "/\00a0";
+    padding: $padding-sm;
+  }
+}

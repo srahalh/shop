@@ -1,29 +1,32 @@
-import { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
+import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 
 function useSearch(elements) {
-
-  const [searchValue, setSearchValue] = useState('');
+  const [searchValue, setSearchValue] = useState("");
   const [elementsSearched, setElementsSearched] = useState(elements);
 
   useEffect(() => {
     if (elements && elements.length !== 0) {
-      if (searchValue === '') {
+      if (searchValue === "") {
         setElementsSearched(elements);
       } else {
         setElementsSearched(
           elements.filter((product) => {
-            return product.category //cuidado aca que puede explotar
-              .toLocaleLowerCase()
-              .includes(searchValue.toLocaleLowerCase());
+            return (
+              product.category
+                .toLocaleLowerCase()
+                .includes(searchValue.toLocaleLowerCase()) ||
+              product.title
+                .toLocaleLowerCase()
+                .includes(searchValue.toLocaleLowerCase())
+            );
           })
         );
       }
     }
   }, [elements, searchValue]);
 
-  return {elementsSearched, setSearchValue};
-
+  return { elementsSearched, setSearchValue };
 }
 
 useSearch.propTypes = {

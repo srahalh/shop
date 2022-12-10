@@ -2,8 +2,27 @@
 @import '../../../styles/config.scss';
 
 .ItemList__continer {
-  @include container;
-  @include flex-layout-space-between;
-  flex-wrap: wrap;
+  @include container-tablet;
+  @include flex-layout-columns;
   margin-top: $margin-md;
+
+  @include desktop {
+    @include container-desktop;
+    @include flex-layout-space-between;
+    margin-top: $margin-md;
+  }
+
+  @include desktop-lg {
+    @include container-desktop-lg;
+    @include flex-layout-space-between;
+    margin-top: $margin-md;
+  }
+  flex-wrap: wrap;
+
+  .ItemList__search{
+    flex: 1;
+  }
+  .ItemList__emptyList {
+    color: $color-error;
+  }
 }

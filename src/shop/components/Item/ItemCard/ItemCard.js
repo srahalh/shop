@@ -20,17 +20,19 @@ const ItemCard = ({id, title, price, imageURL, category}) => {
           imageURL={imageURL}
         />
       </Suspense>
-      <h3>{title}</h3>
-      <p>{category}</p>
-      <p>{price}</p>
+      <div className="ItemCard__info">
+        <h3>{title}</h3>
+        <p>Category: {category}</p>
+        <p>Price:<strong> {price} €</strong></p>
+      </div>
     </article>
   )
 }
 
 ItemCard.propTypes = {
-  id: PropTypes.string,
+  id: PropTypes.number,
   title: PropTypes.string,
-  price: PropTypes.string, 
+  price: PropTypes.number, 
   imageURL: PropTypes.string, 
   category: PropTypes.string
 }

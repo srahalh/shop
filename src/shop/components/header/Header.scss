@@ -2,7 +2,8 @@
 @import '../../styles/config.scss';
 
 .header__container {
-  @include container;
+  @include container-tablet;
+  max-width: 18rem;
   @include flex-layout-space-between;
   margin-top: $padding-md;
   border-bottom: 1px solid lighten($color-primary, 70%);
@@ -15,7 +16,13 @@
       align-self: start;
     }
   }
-  
+  @include desktop {
+    @include container-desktop;
+  };
+
+  @include desktop-lg {
+    @include container-desktop-lg
+  };
 }
 
 .header__breadcrumb {

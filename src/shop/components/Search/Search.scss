@@ -1,0 +1,48 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/config.scss';
+
+.Search__container {
+  display: block;
+
+  @include flex-layout-space-between;
+
+  @include tablet {
+    @include container-tablet;
+    justify-content: center;
+    margin-top: $margin-lg;
+  }
+
+  @include desktop {
+    @include container-desktop;
+    justify-content: end;
+    margin-top: $margin-lg;
+  }
+
+  @include desktop-lg {
+    @include container-desktop-lg;
+    justify-content: end;
+    margin-top: $margin-lg;
+  }
+
+  justify-content: center;
+  margin-top: $margin-lg;
+
+  input {
+    border: 1px solid lighten($color-primary, 70%);
+    height: 2rem;
+    flex: 0 0 60%;
+    
+    &:focus {
+      outline: 0 none;
+      border-color: $color-secondary;
+    }
+
+    @include desktop {
+      flex: 0 0 40%;
+    }
+
+    @include desktop-lg {
+      flex: 0 0 25%;
+    }
+  }
+}

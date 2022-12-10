@@ -1,5 +1,15 @@
-@mixin container {
-  max-width: 80rem;
+@mixin container-desktop-lg {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@mixin container-desktop {
+  max-width: 769px;
+  margin: 0 auto;
+}
+
+@mixin container-tablet {
+  max-width: 481px;
   margin: 0 auto;
 }
 
@@ -7,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
 }
 
 @mixin flex-layout-columns {
@@ -14,4 +25,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+//breakpoints
+
+@mixin tablet {
+  @media only screen and (min-width: 481px) {
+    @content;
+  }
+}
+
+
+@mixin desktop {
+  @media only screen and (min-width: 769px) {
+    @content;
+  }
+}
+
+
+@mixin desktop-lg {
+  @media only screen and (min-width: 1280px) {
+    @content;
+  }
 }

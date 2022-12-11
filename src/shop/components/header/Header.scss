@@ -3,10 +3,9 @@
 
 .header__container {
   @include container-tablet;
-  max-width: 18rem;
   @include flex-layout-space-between;
-  margin-top: $padding-md;
   border-bottom: 1px solid lighten($color-primary, 70%);
+  margin-top: $margin-md;
 
   .header__containerLeft {
     @include flex-layout-columns;
@@ -18,14 +17,14 @@
   }
 
   @include desktop {
+    max-width: 18rem;
     @include container-desktop;
+    margin-top: $margin-md;
   }
-
-  ;
 
   @include desktop-lg {
     @include container-desktop-lg
+    margin-top: $margin-md;
   }
-
-  ;
+  
 }

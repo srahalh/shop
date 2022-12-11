@@ -1,0 +1,44 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/config.scss';
+
+.ProductDetailsPage__container {
+  @include container-tablet;
+  @include flex-layout-columns;
+  margin-top: $margin-lg;
+  
+  @include desktop {
+    @include container-desktop;
+    @include flex-layout-space-between;
+    margin-top: $margin-lg;
+  }
+
+  @include desktop-lg {
+    @include container-desktop-lg;
+    @include flex-layout-space-between;
+    margin-top: $margin-lg;
+  }
+
+  .ProductDetailsPage_leftSide {
+    flex: 0 0 40%;
+    
+    img {
+      width: 100%;
+      height: auto;
+      @include box-shadow;
+    }
+    a {
+      color: $color-secondary;
+      cursor: pointer;
+      margin-bottom: $margin-md;
+      display: block;
+    }
+  }
+  
+  .ProductDetailsPage_RightSide {
+    flex: 0 0 55%;
+    align-self: flex-start;
+  }
+}
+.ProductDetailsPage__emptyProduct {
+  color: $color-error;
+}

@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className="header__container">
       <div className="header__containerLeft">
-        <h1 className="header__title">Products</h1>
+        <h1 className="header__title">🛍️ Shopping Store</h1>
         <Breadcrumb />
       </div>
       <Cart className="header__containerRight" />

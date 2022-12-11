@@ -1,0 +1,57 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/config.scss';
+
+.ItemAction__container {
+  @include flex-layout-space-between;
+  justify-content: start;
+  flex-wrap: wrap;
+  .ItemAction__select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid lighten($color-primary, 70%);
+    height: 1.8rem;
+    flex: 0 0 100%;
+    margin: $margin-md $margin-md $margin-lg 0;
+      &:focus {
+        outline: 0 none;
+        border-color: $color-secondary;
+      }
+    
+    @include desktop {
+      margin: $margin-md $margin-md $margin-md 0;
+      flex: 0 0 300px;
+    }
+  }
+
+  .ItemAction__btn {
+    background-color: $color-background-2;
+    border: 1px solid lighten($color-primary, 70%);
+    text-decoration: none;
+    color: $color-primary;
+    padding: $padding-sm;
+    margin: $margin-md $margin-md $margin-lg 0;
+    cursor: pointer;
+    flex: 0 0 100%;
+
+    @include desktop {
+      margin: $margin-md $margin-md $margin-md 0;
+      flex: 0 0 auto;
+    }
+
+    &:hover {
+      background-color: $color-secondary;
+      color: $color-background;
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+      transition: all 0.3s ease-out;
+    }
+
+    &:disabled {
+      border: 1px solid lighten($color-primary, 70%);
+      background-color: $color-background-3;
+      color: $color-primary;
+      pointer-events:none;
+    }
+  }
+}

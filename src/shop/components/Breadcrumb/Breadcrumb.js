@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useGetProductByIdQuery } from '../../redux/API/productsAPI';
 
-import "./Breadcrumb.scss";
+import './Breadcrumb.scss';
 
 const Breadcrumb = () => {
   const navigate = useNavigate();

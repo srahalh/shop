@@ -1,0 +1,16 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/config.scss';
+
+.ItemInfoDetails__container {
+  .ItemInfoDetails__title {
+    padding-bottom: $padding-md;
+    border-bottom: 1px solid lighten($color-primary, 70%);
+  }
+
+  .ItemInfoDetails__price {
+    padding: $padding-lg 0;
+    border-top: 1px solid lighten($color-primary, 70%);
+    border-bottom: 1px solid lighten($color-primary, 70%);
+    @include box-shadow;
+  }
+}

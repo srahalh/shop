@@ -5,12 +5,12 @@ import './ItemInfoDetails.scss';
 
 const ItemInfoDatails = ({title, price, description, category}) => {
   return (
-      <section className="ItemInfoDetails__container">
-        <h3 className="ItemInfoDetails__title">{title}</h3>
-        <p className="ItemInfoDetails__description">{description}</p>
-        <p><small>Category: {category}</small></p>
-        <p className="ItemInfoDetails__price">Price:<strong> {price} €</strong></p>    
-      </section>
+    <section className="ItemInfoDetails__container">
+      <h3 className="ItemInfoDetails__title">{title}</h3>
+      <p className="ItemInfoDetails__description">{description}</p>
+      <p><small>Category: {category}</small></p>
+      <p className="ItemInfoDetails__price">Price:<strong> {price} €</strong></p>    
+    </section>
   )
 }
 

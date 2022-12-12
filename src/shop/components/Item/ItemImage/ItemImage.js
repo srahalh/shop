@@ -9,6 +9,7 @@ const ItemImage = ({imageURL}) => {
       className="ItemImage__container"
       alt="Some images here"
       src={imageURL}
+      loading="lazy"
     />
   )
 }

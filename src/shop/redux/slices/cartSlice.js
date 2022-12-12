@@ -20,8 +20,8 @@ export const CartSlice = createSlice({
         productAPI.endpoints.addProductToCart.matchFulfilled,
         (state, { payload }) => {
           (state.isAddingToCart = false),
-            (state.cartCount += payload.products.length),
-            setWithExpiry("cart", payload.products.length, 3600000);
+          (state.cartCount += payload.products.length),
+          setWithExpiry("cart", payload.products.length, 3600000);
         }
       );
   },

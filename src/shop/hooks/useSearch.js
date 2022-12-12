@@ -15,10 +15,10 @@ function useSearch(elements) {
             return (
               product.category
                 .toLocaleLowerCase()
-                .includes(searchValue.toLocaleLowerCase()) ||
+                .includes(searchValue.toLocaleLowerCase().trim()) ||
               product.title
                 .toLocaleLowerCase()
-                .includes(searchValue.toLocaleLowerCase())
+                .includes(searchValue.toLocaleLowerCase().trim())
             );
           })
         );

@@ -1,8 +1,7 @@
-import React, {Suspense, lazy} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
-import Spinner from '../../Spinner/Spinner';
-const ItemImage = lazy( () => import ('../ItemImage/ItemImage') );
+import ItemImage from '../ItemImage/ItemImage';
 
 import './ItemCard.scss';
 
@@ -13,13 +12,9 @@ const ItemCard = ({id, title, price, imageURL, category}) => {
       className="ItemCard__container"
       onClick={() => navigate(`/product/${id}`)}
     >
-      <Suspense
-        fallback={<Spinner />}
-      >
-        <ItemImage
-          imageURL={imageURL}
-        />
-      </Suspense>
+      <ItemImage
+        imageURL={imageURL}
+      />
       <div className="ItemCard__info">
         <h3>{title}</h3>
         <p>Category: {category}</p>

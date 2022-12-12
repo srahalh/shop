@@ -1,27 +1,27 @@
 import React from 'react';
-import useSearch from '../../../hooks/useSearch';
-import { useGetProductsQuery } from "../../../redux/API/productsAPI";
-import Search from '../../Search/Search';
-import Spinner from '../../Spinner/Spinner';
-import ItemCard from '../ItemCard/ItemCard';
+import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
+import { MESSAGES } from '../../components/ErrorMessage/Messages';
+import ItemCard from '../../components/Item/ItemCard/ItemCard';
+import Search from '../../components/Search/Search';
+import Spinner from '../../components/Spinner/Spinner';
+import useSearch from '../../hooks/useSearch';
+import { useGetProductsQuery } from '../../redux/API/productsAPI';
 
-import "./ItemList.scss";
+import './ProductListPage.scss';
 
-const ItemList = () => {
+export const ProductListPage = () => {
   const { data: products = [], isLoading, isError } = useGetProductsQuery();
   const { elementsSearched: productSearched, setSearchValue } =
     useSearch(products);
 
   return (
-    <div className="ItemList__container">
+    <div className="ProductListPage__container">
       <Search setSearchValue={setSearchValue} />
-      <div className="ItemList__List">
+      <div className="ProductListPage__List">
         {isLoading ? (
           <Spinner />
         ) : productSearched.length === 0 || isError ? (
-          <p className="ItemList__emptyList">
-            Sorry! We dont have articles right now, come back later
-          </p>
+          <ErrorMessage message={MESSAGES.PRODUCT_LIST_PAGE_MESSAGE} />
         ) : (
           productSearched.map((product, index) => {
             return (
@@ -40,5 +40,3 @@ const ItemList = () => {
     </div>
   );
 };
-
-export default ItemList;

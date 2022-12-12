@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
+import { MESSAGES } from '../../components/ErrorMessage/Messages';
 import { ItemAction } from '../../components/Item/ItemAction/ItemAction';
 import ItemImage from '../../components/Item/ItemImage/ItemImage';
 import ItemInfoDatails from '../../components/Item/ItemInfoDetails/ItemInfoDatails';
@@ -22,9 +24,7 @@ export const ProductDetailsPage = () => {
       {isLoading ? (
         <Spinner />
       ) : productDetails.length === 0 || isError ? (
-        <p className="ProductDetailsPage__emptyProduct">
-          Sorry! Something its wrong, come back later.
-        </p>
+        <ErrorMessage message={MESSAGES.PRODUCT_DETAILS_PAGE_MESSAGE} />
       ) : (
         <>
           <div className="ProductDetailsPage_leftSide">

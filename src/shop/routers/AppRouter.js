@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import Header from '../components/Header/Header'
+import Header from '../components/Header/Header';
 import { ProductDetailsPage } from '../pages/ProductDetailsPage/ProductDetailsPage';
 import { ProductListPage } from '../pages/ProductListPage';
 

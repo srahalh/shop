@@ -5,7 +5,7 @@ import ItemImage from '../ItemImage/ItemImage';
 
 import './ItemCard.scss';
 
-const ItemCard = ({id, title, price, imageURL, category}) => {
+const ItemCard = ({id, model, brand, price, imageURL}) => {
   const navigate = useNavigate();
   return (
     <article
@@ -16,8 +16,8 @@ const ItemCard = ({id, title, price, imageURL, category}) => {
         imageURL={imageURL}
       />
       <div className="ItemCard__info">
-        <h3>{title}</h3>
-        <p>Category: {category}</p>
+        <h3>{model}</h3>
+        <p>Brand: {brand}</p>
         <p>Price:<strong> {price} €</strong></p>
       </div>
     </article>
@@ -25,9 +25,10 @@ const ItemCard = ({id, title, price, imageURL, category}) => {
 }
 
 ItemCard.propTypes = {
-  id: PropTypes.number,
-  title: PropTypes.string,
-  price: PropTypes.number, 
+  id: PropTypes.string,
+  model: PropTypes.string,
+  brand: PropTypes.string,
+  price: PropTypes.string,
   imageURL: PropTypes.string, 
   category: PropTypes.string
 }

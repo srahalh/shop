@@ -3,20 +3,20 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const productAPI = createApi({
   reducerPath: "products",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://fakestoreapi.com",
+    baseUrl: "http://localhost:3001/api/",
   }),
-  keepUnusedDataFor: 3600, // it's delete data when past a hour
+  keepUnusedDataFor: 3600, // Delete data when past a hour
   endpoints: (builder) => ({
     getProducts: builder.query({
-      query: () => "products",
+      query: () => "product",
     }),
     getProductById: builder.query({
-      query: (productId) => `products/${productId}`,
+      query: (productId) => `product/${productId}`,
     }),
     addProductToCart: builder.mutation({
       query: (body) => ({
-        url: "/carts/1",
-        method: "PUT",
+        url: "cart",
+        method: "POST",
         body: body
       }),
     }),

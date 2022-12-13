@@ -19,8 +19,8 @@
       }
     
     @include desktop {
-      margin: $margin-md $margin-md $margin-md 0;
-      flex: 0 0 300px;
+      margin: $margin-md;
+      flex: 0 0 150px;
     }
   }
 

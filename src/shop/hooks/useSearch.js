@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import PropTypes from "prop-types";
+import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 function useSearch(elements) {
   const [searchValue, setSearchValue] = useState("");
@@ -13,10 +13,10 @@ function useSearch(elements) {
         setElementsSearched(
           elements.filter((product) => {
             return (
-              product.category
+              product.brand
                 .toLocaleLowerCase()
                 .includes(searchValue.toLocaleLowerCase().trim()) ||
-              product.title
+              product.model
                 .toLocaleLowerCase()
                 .includes(searchValue.toLocaleLowerCase().trim())
             );

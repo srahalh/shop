@@ -1,0 +1,300 @@
+[
+  {
+    "id": "1",
+    "imgUrl": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "brand": "Acer",
+    "model": "Liquid 1",
+    "price": "16",
+    "cpu": "",
+    "ram": "",
+    "so": "windows",
+    "displayResolution": "",
+    "battery": "",
+    "dimentions": "",
+    "weight": "2kg",
+    "primaryCamera": "",
+    "secondaryCmera": "",
+    "options": {
+      "color": [
+        {
+          "code": "1",
+          "name": "black"
+        }
+      ],
+      "storage": [
+        {
+          "code": "1",
+          "name": "16GB"
+        }
+      ]
+    }
+  },
+  {
+    "id": "2",
+    "imgUrl": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+    "brand": "Acer",
+    "model": "Liquid 2",
+    "price": "16",
+    "cpu": "",
+    "ram": "",
+    "so": "",
+    "displayResolution": "",
+    "battery": "",
+    "dimentions": "",
+    "weight": "",
+    "primaryCamera": "",
+    "secondaryCmera": "",
+    "options": {
+      "color": [
+        {
+          "code": "1",
+          "name": "black"
+        }
+      ],
+      "storage": [
+        {
+          "code": "1",
+          "name": "16GB"
+        }
+      ]
+    }
+  },
+  {
+    "id": "3",
+    "imgUrl": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+    "brand": "Acer",
+    "model": "Liquid 3",
+    "price": "16",
+    "cpu": "1.5 Ghz Mediatek Helio g96",
+    "ram": "4GB",
+    "so": "Android",
+    "displayResolution": "",
+    "battery": "",
+    "dimentions": "25X25",
+    "weight": "250g",
+    "primaryCamera": ["Samsung 10Mp", "CMOS Sony 2Mp"],
+    "secondaryCmera": "",
+    "options": {
+      "color": [
+        {
+          "code": "1",
+          "name": "black"
+        }
+      ],
+      "storage": [
+        {
+          "code": "1",
+          "name": "16GB"
+        },
+        {
+            "code": "2",
+            "name": "32GB"
+        }
+      ]
+    }
+  },
+  {
+    "id": "4",
+    "imgUrl": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+    "brand": "HP",
+    "model": "Pavileon",
+    "price": "16",
+    "cpu": "Pentium",
+    "ram": "128",
+    "so": "windows",
+    "displayResolution": "480",
+    "battery": "2500mAh",
+    "dimentions": "10*20*30",
+    "weight": "1kg",
+    "primaryCamera": "12mpx",
+    "secondaryCmera": "5mpx",
+    "options": {
+      "color": [
+        {
+          "code": "1",
+          "name": "white"
+        },
+        {
+            "code": "2",
+            "name": "black"
+        }
+      ],
+      "storage": [
+        {
+          "code": "1",
+          "name": "16GB"
+        }
+      ]
+    }
+  },
+  {
+    "id": "5",
+    "imgUrl": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "brand": "Huawei",
+    "model": "Huawei MateBook",
+    "price": "16",
+    "cpu": "",
+    "ram": "",
+    "so": "",
+    "displayResolution": "",
+    "battery": "",
+    "dimentions": "",
+    "weight": "",
+    "primaryCamera": "",
+    "secondaryCmera": "",
+    "options": {
+      "color": [
+        {
+          "code": "1",
+          "name": "black"
+        }
+      ],
+      "storage": [
+        {
+          "code": "1",
+          "name": "16GB"
+        }
+      ]
+    }
+  },
+  {
+    "id": "6",
+    "imgUrl": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+    "brand": "Samsung",
+    "model": "Galaxy Desktop",
+    "price": "16",
+    "cpu": "",
+    "ram": "",
+    "so": "",
+    "displayResolution": "",
+    "battery": "20mah",
+    "dimentions": "",
+    "weight": "",
+    "primaryCamera": "",
+    "secondaryCmera": "",
+    "options": {
+      "color": [
+        {
+          "code": "1",
+          "name": "black"
+        }
+      ],
+      "storage": [
+        {
+          "code": "1",
+          "name": "16GB"
+        }
+      ]
+    }
+  },
+  {
+    "id": "7",
+    "imgUrl": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+    "brand": "Apple",
+    "model": "Mac Pro 12",
+    "price": "16",
+    "cpu": "1.5 Ghz Mediatek Helio g96",
+    "ram": "4GB",
+    "so": "Android",
+    "displayResolution": "",
+    "battery": "",
+    "dimentions": "25X25",
+    "weight": "250g",
+    "primaryCamera": ["Samsung 10Mp", "CMOS Sony 2Mp"],
+    "secondaryCmera": "",
+    "options": {
+      "color": [
+        {
+          "code": "1",
+          "name": "black"
+        },
+        {
+          "code": "2",
+          "name": "black"
+        },
+        {
+          "code": "3",
+          "name": "blue"
+        }
+      ],
+      "storage": [
+        {
+          "code": "1",
+          "name": "16GB"
+        },
+        {
+            "code": "2",
+            "name": "32GB"
+        }
+      ]
+    }
+  },
+  {
+    "id": "8",
+    "imgUrl": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+    "brand": "Dell",
+    "model": "Asford 12",
+    "price": "16",
+    "cpu": "AMD",
+    "ram": "512",
+    "so": "Linux",
+    "displayResolution": "FullHD",
+    "battery": "",
+    "dimentions": "20*10*85",
+    "weight": "600",
+    "primaryCamera": "",
+    "secondaryCmera": "",
+    "options": {
+      "color": [
+        {
+          "code": "1",
+          "name": "green"
+        },
+        {
+            "code": "2",
+            "name": "black"
+        }
+      ],
+      "storage": [
+        {
+          "code": "1",
+          "name": "16GB"
+        }
+      ]
+    }
+  },
+  {
+    "id": "9",
+    "imgUrl": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+    "brand": "ASUS",
+    "model": "Liquid 5",
+    "price": "20",
+    "cpu": "intel",
+    "ram": "256",
+    "so": "linux",
+    "displayResolution": "1080",
+    "battery": "4000mAh",
+    "dimentions": "40x0x25",
+    "weight": "500",
+    "primaryCamera": "48mpx",
+    "secondaryCmera": "12mpx",
+    "options": {
+      "color": [
+        {
+          "code": "1",
+          "name": "white"
+        },
+        {
+            "code": "2",
+            "name": "black"
+        }
+      ],
+      "storage": [
+        {
+          "code": "1",
+          "name": "16GB"
+        }
+      ]
+    }
+  }
+]

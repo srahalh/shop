@@ -20,6 +20,7 @@
 
   .ProductDetailsPage_leftSide {
     flex: 0 0 40%;
+    align-self: flex-start;
     
     img {
       width: 100%;
@@ -35,10 +36,14 @@
   }
   
   .ProductDetailsPage_RightSide {
-    flex: 0 0 55%;
-    align-self: flex-start;
+    width: 100%;
+    padding: $margin-lg;
+    align-self: center;
+    
+    @include desktop {
+      padding: 0;
+      flex: 0 0 55%;
+      align-self: flex-start;
+    }
   }
-}
-.ProductDetailsPage__emptyProduct {
-  color: $color-error;
 }

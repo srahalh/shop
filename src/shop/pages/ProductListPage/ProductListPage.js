@@ -28,10 +28,10 @@ export const ProductListPage = () => {
               <ItemCard
                 key={index}
                 id={product.id}
-                title={product.title}
+                model={product.model}
+                brand={product.brand}
                 price={product.price}
-                imageURL={product.image}
-                category={product.category}
+                imageURL={product.imgUrl}
               />
             );
           })

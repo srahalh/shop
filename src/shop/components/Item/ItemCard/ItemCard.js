@@ -25,7 +25,7 @@ const ItemCard = ({id, model, brand, price, imageURL}) => {
 }
 
 ItemCard.propTypes = {
-  id: PropTypes.string,
+  id: PropTypes.string.isRequired,
   model: PropTypes.string,
   brand: PropTypes.string,
   price: PropTypes.string,

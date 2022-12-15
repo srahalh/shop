@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemImage component Should render with imgURL 1`] = `
+<DocumentFragment>
+  <img
+    alt="Some images here"
+    class="ItemImage__container"
+    loading="lazy"
+    src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+  />
+</DocumentFragment>
+`;

@@ -72,7 +72,9 @@ const renderWithProviders = (ui, options = {} ) => {
 
   const uiTree = (
     <Provider store={store}>
-      {ui}
+      <MemoryRouter initialEntries={[route]}>
+        {ui}
+      </MemoryRouter>
     </Provider>
   )
   return render (uiTree, options)

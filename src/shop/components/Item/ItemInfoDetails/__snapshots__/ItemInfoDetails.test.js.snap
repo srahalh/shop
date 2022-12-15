@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemInfoDatails component Should render ItemInfoDatails Component 1`] = `
+<DocumentFragment>
+  <section
+    class="ItemInfoDetails__container"
+  >
+    <h3
+      class="ItemInfoDetails__title"
+    >
+      Liquid 1
+    </h3>
+    <p
+      class="ItemInfoDetails__attribute"
+    >
+      <strong>
+        Brand: 
+      </strong>
+       Acer
+    </p>
+    <p
+      class="ItemInfoDetails__attribute"
+    >
+      <strong>
+        SO: 
+      </strong>
+      windows
+    </p>
+    <p
+      class="ItemInfoDetails__attribute"
+    >
+      <strong>
+        Weight: 
+      </strong>
+      2kg
+    </p>
+    <p
+      class="ItemInfoDetails__price"
+    >
+      Price: 
+      <strong>
+        16 €
+      </strong>
+    </p>
+  </section>
+</DocumentFragment>
+`;

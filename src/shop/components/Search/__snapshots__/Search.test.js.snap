@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component Should render Search Component 1`] = `
+<DocumentFragment>
+  <div
+    class="Search__container"
+  >
+    <input
+      label="search"
+      placeholder="Search article by category or title"
+      type="text"
+    />
+  </div>
+</DocumentFragment>
+`;

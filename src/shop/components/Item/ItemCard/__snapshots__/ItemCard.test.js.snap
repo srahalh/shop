@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test ItemCard Should render ItemCard 1`] = `
+<DocumentFragment>
+  <article
+    class="ItemCard__container"
+  >
+    <img
+      alt="Some images here"
+      class="ItemImage__container"
+      loading="lazy"
+    />
+    <div
+      class="ItemCard__info"
+    >
+      <h3>
+        Liquid 5
+      </h3>
+      <p>
+        Brand: ASUS
+      </p>
+      <p>
+        Price:
+        <strong>
+           20 €
+        </strong>
+      </p>
+    </div>
+  </article>
+</DocumentFragment>
+`;

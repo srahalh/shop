@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import ItemInfoDatails from "./ItemInfoDatails";
-const products = require("../../../../../mock/products.json");
+const products = require("../../../test/products.json");
 
 describe("ItemInfoDatails component", () => {
   test("Should render ItemInfoDatails Component", () => {

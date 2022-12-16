@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test ProductListPage Should render ProductListPage 1`] = `
+<DocumentFragment>
+  <div
+    class="ProductListPage__container"
+  >
+    <div
+      class="Search__container"
+    >
+      <input
+        label="search"
+        placeholder="Search article by category or title"
+        type="text"
+      />
+    </div>
+    <div
+      class="ProductListPage__List"
+    >
+      <article
+        class="ItemCard__container"
+      >
+        <img
+          alt="Some images here"
+          class="ItemImage__container"
+          loading="lazy"
+          src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+        />
+        <div
+          class="ItemCard__info"
+        >
+          <h3>
+            Liquid 1
+          </h3>
+          <p>
+            Brand: Acer
+          </p>
+          <p>
+            Price:
+            <strong>
+               16 €
+            </strong>
+          </p>
+        </div>
+      </article>
+      <article
+        class="ItemCard__container"
+      >
+        <img
+          alt="Some images here"
+          class="ItemImage__container"
+          loading="lazy"
+          src="https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg"
+        />
+        <div
+          class="ItemCard__info"
+        >
+          <h3>
+            Liquid 2
+          </h3>
+          <p>
+            Brand: Acer
+          </p>
+          <p>
+            Price:
+            <strong>
+               16 €
+            </strong>
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</DocumentFragment>
+`;

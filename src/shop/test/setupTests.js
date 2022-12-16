@@ -47,25 +47,6 @@ const setupStore = (preloadedState) => {
   })
 }
 
-// function renderWithProviders(
-//   ui,
-//   {
-//     preloadedState = {},
-//     store = setupStore(preloadedState),
-//     ...renderOptions
-//   } = {}
-// ) {
-//   function Wrapper({ children, store, route = "/" }) {
-//     return (
-//       <Provider store={store}>
-//         <Router route={route}>{children}</Router>
-//       </Provider>
-//     );
-//   }
-//   // Return an object with the store and all of RTL's query functions
-//   return { store, ...render(ui, { wrapper: Wrapper, ...renderOptions }) };
-// }
-
 const renderWithProviders = (ui, options = {} ) => {
   const {preloadedState = {}, route = "/"} = options
   const store = setupStore(preloadedState);
@@ -79,8 +60,6 @@ const renderWithProviders = (ui, options = {} ) => {
   )
   return render (uiTree, options)
 }
-
-
 
 // re-export everything
 export * from "@testing-library/react";

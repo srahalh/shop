@@ -1,0 +1,87 @@
+{
+  "products": {
+    "queries": {
+      "getProductById(\"9\")": {
+        "status": "fulfilled",
+        "endpointName": "getProductById",
+        "requestId": "ponvrSnUnwk4z0vEE4ys8",
+        "originalArgs": "9",
+        "startedTimeStamp": 1671148767883,
+        "data": [
+          {
+            "id": "9",
+            "imgUrl": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+            "brand": "ASUS",
+            "model": "Liquid 5",
+            "price": "20",
+            "cpu": "intel",
+            "ram": "256",
+            "so": "linux",
+            "displayResolution": "1080",
+            "battery": "4000mAh",
+            "dimentions": "40x0x25",
+            "weight": "500",
+            "primaryCamera": "48mpx",
+            "secondaryCmera": "12mpx",
+            "options": {
+              "color": [
+                {
+                  "code": "1",
+                  "name": "white"
+                },
+                {
+                  "code": "2",
+                  "name": "black"
+                }
+              ],
+              "storage": [
+                {
+                  "code": "1",
+                  "name": "16GB"
+                }
+              ]
+            }
+          }
+        ],
+        "fulfilledTimeStamp": 1671148767936
+      }
+    },
+    "mutations": {
+      "HuI6PQe24JbbJR4UJMTL8": {
+        "requestId": "HuI6PQe24JbbJR4UJMTL8",
+        "status": "fulfilled",
+        "endpointName": "addProductToCart",
+        "startedTimeStamp": 1671148796166,
+        "data": {
+          "count": 1
+        },
+        "fulfilledTimeStamp": 1671148796197
+      }
+    },
+    "provided": {},
+    "subscriptions": {
+      "getProductById(\"9\")": {
+        "4p1wkmPx1Vsx-zYxA-FSM": {
+          "pollingInterval": 0
+        },
+        "V1y9ae18lyQ5CoQC6FpcC": {
+          "pollingInterval": 0
+        }
+      }
+    },
+    "config": {
+      "online": true,
+      "focused": true,
+      "middlewareRegistered": true,
+      "refetchOnFocus": false,
+      "refetchOnReconnect": false,
+      "refetchOnMountOrArgChange": false,
+      "keepUnusedDataFor": 3600,
+      "reducerPath": "products"
+    }
+  },
+  "cart": {
+    "isAddingToCart": false,
+    "cartCount": 2
+  }
+}

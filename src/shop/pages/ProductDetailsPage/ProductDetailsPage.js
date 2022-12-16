@@ -21,7 +21,7 @@ export const ProductDetailsPage = () => {
     <div className="ProductDetailsPage__container">
       {isLoading ? (
         <Spinner />
-      ) : productDetails.length === 0 || isError ? (
+      ) : productDetails?.length === 0 || isError ? (
         <ErrorMessage message={MESSAGES.PRODUCT_DETAILS_PAGE_MESSAGE} />
       ) : (
         <>

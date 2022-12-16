@@ -9,6 +9,7 @@
 
   .header__containerLeft {
     @include flex-layout-columns;
+    padding: $padding-sm;
 
     .header__title {
       margin: 0;

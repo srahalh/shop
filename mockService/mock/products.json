@@ -72,7 +72,7 @@
     "battery": "",
     "dimentions": "25X25",
     "weight": "250g",
-    "primaryCamera": ["Samsung 10Mp", "CMOS Sony 2Mp"],
+    "primaryCamera": "Samsung 10Mp",
     "secondaryCmera": "",
     "options": {
       "color": [
@@ -200,7 +200,7 @@
     "battery": "",
     "dimentions": "25X25",
     "weight": "250g",
-    "primaryCamera": ["Samsung 10Mp", "CMOS Sony 2Mp"],
+    "primaryCamera": "Samsung 10Mp",
     "secondaryCmera": "",
     "options": {
       "color": [

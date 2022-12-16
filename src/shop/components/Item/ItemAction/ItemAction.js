@@ -28,45 +28,51 @@ const ItemAction = ({ id, options = {} }) => {
     }
   };
   return (
-    <div className="ItemAction__container">
-      <label>
-        <strong>Color:</strong>
-      </label>
-      <select
-        className="ItemAction__select"
-        name={"color"}
-        onChange={(e) => setColorCodeItem(e.target.value)}
-      >
-        {color.map((attribute, index) => (
-          <option key={index} value={attribute.code}>
-            {attribute.name}
-          </option>
-        ))}
-      </select>
-      <label>
-        <strong>Storage:</strong>
-      </label>
-      <select
-        className="ItemAction__select"
-        name={"storage"}
-        onChange={(e) => setStorageCodeItem(e.target.value)}
-      >
-        {storage.map((attribute, index) => (
-          <option key={index} value={attribute.code}>
-            {attribute.name}
-          </option>
-        ))}
-      </select>
-      <input
-        className="ItemAction__btn"
-        type="submit"
-        value={"add to cart"}
-        disabled={isAddingToCart}
-        onClick={handleCart}
-      />
+    <>
+      <div className="ItemAction__container">
+        <div>
+          <label>
+            <strong>Color:</strong>
+          </label>
+          <select
+            className="ItemAction__select"
+            name={"color"}
+            onChange={(e) => setColorCodeItem(e.target.value)}
+          >
+            {color.map((attribute, index) => (
+              <option key={index} value={attribute.code}>
+                {attribute.name}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div>
+          <label>
+            <strong>Storage:</strong>
+          </label>
+          <select
+            className="ItemAction__select"
+            name={"storage"}
+            onChange={(e) => setStorageCodeItem(e.target.value)}
+          >
+            {storage.map((attribute, index) => (
+              <option key={index} value={attribute.code}>
+                {attribute.name}
+              </option>
+            ))}
+          </select>
+        </div>
+        <input
+          className="ItemAction__btn"
+          type="submit"
+          value={"add to cart"}
+          disabled={isAddingToCart}
+          onClick={handleCart}
+        />
+      </div>
       {isAddingToCart && <Spinner />}
       {isError && <ErrorMessage message={MESSAGES.ITEM_ACTION_ERROR_MESSAGE} />}
-    </div>
+    </>
   );
 };
 

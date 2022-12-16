@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const products = require("../mock/products.json");
+const products = require("./mock/products.json");
 
 app.get("/api/product", (_request, response) => {
   response.json(products);

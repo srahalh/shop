@@ -1,0 +1,98 @@
+{
+  "products": {
+    "queries": {
+      "getProducts(undefined)": {
+        "status": "fulfilled",
+        "endpointName": "getProducts",
+        "requestId": "gmHxuZPnYfjCvDcJkqhUQ",
+        "startedTimeStamp": 1671147623407,
+        "data": [
+          {
+            "id": "1",
+            "imgUrl": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "brand": "Acer",
+            "model": "Liquid 1",
+            "price": "16",
+            "cpu": "",
+            "ram": "",
+            "so": "windows",
+            "displayResolution": "",
+            "battery": "",
+            "dimentions": "",
+            "weight": "2kg",
+            "primaryCamera": "",
+            "secondaryCmera": "",
+            "options": {
+              "color": [
+                {
+                  "code": "1",
+                  "name": "black"
+                }
+              ],
+              "storage": [
+                {
+                  "code": "1",
+                  "name": "16GB"
+                }
+              ]
+            }
+          },
+          {
+            "id": "2",
+            "imgUrl": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+            "brand": "Acer",
+            "model": "Liquid 2",
+            "price": "16",
+            "cpu": "",
+            "ram": "",
+            "so": "",
+            "displayResolution": "",
+            "battery": "",
+            "dimentions": "",
+            "weight": "",
+            "primaryCamera": "",
+            "secondaryCmera": "",
+            "options": {
+              "color": [
+                {
+                  "code": "1",
+                  "name": "black"
+                }
+              ],
+              "storage": [
+                {
+                  "code": "1",
+                  "name": "16GB"
+                }
+              ]
+            }
+          }
+        ],
+        "fulfilledTimeStamp": 1671147623514
+      }
+    },
+    "mutations": {},
+    "provided": {},
+    "subscriptions": {
+      "getProducts(undefined)": {
+        "JVevzCa4talg6z2nYgjzc": {
+          "pollingInterval": 0
+        }
+      }
+    },
+    "config": {
+      "online": true,
+      "focused": true,
+      "middlewareRegistered": true,
+      "refetchOnFocus": false,
+      "refetchOnReconnect": false,
+      "refetchOnMountOrArgChange": false,
+      "keepUnusedDataFor": 3600,
+      "reducerPath": "products"
+    }
+  },
+  "cart": {
+    "isAddingToCart": false,
+    "cartCount": 0
+  }
+}

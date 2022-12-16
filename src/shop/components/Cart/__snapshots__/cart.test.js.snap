@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Cart Should render Cart and have count of state in snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    2 Articles in 🛒
+  </div>
+</DocumentFragment>
+`;

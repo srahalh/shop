@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import ItemImage from "./ItemImage";
-const products = require("../../../../../mock/products.json");
+const products = require("../../../test/products.json");
 
 describe("ItemImage component", () => {
   test("Should render with imgURL", () => {

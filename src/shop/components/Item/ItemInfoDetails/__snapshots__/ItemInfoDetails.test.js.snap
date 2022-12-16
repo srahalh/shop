@@ -8,7 +8,7 @@ exports[`ItemInfoDatails component Should render ItemInfoDatails Component 1`] =
     <h3
       class="ItemInfoDetails__title"
     >
-      Liquid 1
+      Asford 12
     </h3>
     <p
       class="ItemInfoDetails__attribute"
@@ -16,7 +16,23 @@ exports[`ItemInfoDatails component Should render ItemInfoDatails Component 1`] =
       <strong>
         Brand: 
       </strong>
-       Acer
+       Dell
+    </p>
+    <p
+      class="ItemInfoDetails__attribute"
+    >
+      <strong>
+        CPU: 
+      </strong>
+       AMD
+    </p>
+    <p
+      class="ItemInfoDetails__attribute"
+    >
+      <strong>
+        RAM: 
+      </strong>
+      512
     </p>
     <p
       class="ItemInfoDetails__attribute"
@@ -24,7 +40,23 @@ exports[`ItemInfoDatails component Should render ItemInfoDatails Component 1`] =
       <strong>
         SO: 
       </strong>
-      windows
+      Linux
+    </p>
+    <p
+      class="ItemInfoDetails__attribute"
+    >
+      <strong>
+        Display Resolution: 
+      </strong>
+      FullHD
+    </p>
+    <p
+      class="ItemInfoDetails__attribute"
+    >
+      <strong>
+        Dimentions: 
+      </strong>
+      20*10*85
     </p>
     <p
       class="ItemInfoDetails__attribute"
@@ -32,7 +64,7 @@ exports[`ItemInfoDatails component Should render ItemInfoDatails Component 1`] =
       <strong>
         Weight: 
       </strong>
-      2kg
+      600
     </p>
     <p
       class="ItemInfoDetails__price"

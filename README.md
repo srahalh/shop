@@ -34,6 +34,24 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 Run linter config to watch the error in the code.
 
-## Other information
+## Mock Server
 
-This code its using [fakestoreapi](https://fakestoreapi.com/) Instead of the one mentioned in the test document. This is because the endpoints are down. This means that some functionality will not be as expected.
+This code its using mock server Instead of the API mentioned in the test document. This is because the endpoints are down.
+
+# Description
+
+- This a mockServer to serve JSON of products to the shop app.
+- The server by default on port 3001
+- Also you can add more endpoints and complete de products.json
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start:mockServer`
+
+Run the app.
+
+### `npm dev:mockServer`
+
+Runs the app in the development mode.

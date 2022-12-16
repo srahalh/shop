@@ -6,7 +6,7 @@ exports[`ItemImage component Should render with imgURL 1`] = `
     alt="Some images here"
     class="ItemImage__container"
     loading="lazy"
-    src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+    src="https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg"
   />
 </DocumentFragment>
 `;

@@ -16,5 +16,4 @@ Run the app.
 
 Runs the app in the development mode.
 
-## Other information
 

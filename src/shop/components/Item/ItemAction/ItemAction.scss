@@ -5,25 +5,34 @@
   @include flex-layout-space-between;
   justify-content: start;
   flex-wrap: wrap;
-  .ItemAction__select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border: 1px solid lighten($color-primary, 70%);
-    height: 1.8rem;
+  div {
     flex: 0 0 100%;
-    margin: $margin-md $margin-md $margin-lg 0;
-      &:focus {
-        outline: 0 none;
-        border-color: $color-secondary;
-      }
-    
     @include desktop {
       margin: $margin-md;
-      flex: 0 0 150px;
+      flex: 0 0 34%;
+      label {
+        margin: $margin-md;
+      }
+    }
+    .ItemAction__select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      border: 1px solid lighten($color-primary, 70%);
+      height: 1.8rem;
+      width: 100%;
+      margin: $margin-md $margin-md $margin-lg 0;
+        &:focus {
+          outline: 0 none;
+          border-color: $color-secondary;
+        }
+      @include desktop {
+        margin: $margin-md;
+        width: 60%;
+      }
     }
   }
-
+  
   .ItemAction__btn {
     background-color: $color-background-2;
     border: 1px solid lighten($color-primary, 70%);
@@ -32,11 +41,11 @@
     padding: $padding-sm;
     margin: $margin-md $margin-md $margin-lg 0;
     cursor: pointer;
-    flex: 0 0 100%;
+    flex: 0 0 auto;
 
     @include desktop {
       margin: $margin-md $margin-md $margin-md 0;
-      flex: 0 0 auto;
+      flex: 1 0 auto;
     }
 
     &:hover {
